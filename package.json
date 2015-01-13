@@ -1,0 +1,16 @@
+{
+  "name": "Your Name",
+  "version": "0.0.1",
+  "description": "TODO description",
+  "author": "init ag",
+  "devDependencies": {
+      "grunt": "~0.4.5",
+      "grunt-contrib-clean": "*",
+      "grunt-contrib-concat": "*",
+      "grunt-contrib-uglify": "*",
+      "grunt-contrib-compass": "*",
+      "grunt-contrib-watch": "*",
+      "grunt-notify": "*",
+      "load-grunt-tasks": "*"
+  }
+}
