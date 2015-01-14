@@ -1,3 +1,3 @@
-Simple Gruntfile and packe.json Sample
+Simple Gruntfile and package.json Sample
 
 For more Informations look at the Wiki ;)
