@@ -76,6 +76,9 @@ module.exports = function(grunt) {
     },
 
     watch : {
+      options: {
+        livereload: true,
+      },
       js : {
         files : [ '<%= globalConfig.jsSrc %>/**/*.js' ],
         tasks : [ 'build-js' ]
@@ -84,6 +87,9 @@ module.exports = function(grunt) {
       scss : {
         files : [ '<%= globalConfig.cssSrc %>/**/*.scss' ],
         tasks : [ 'build-sass' ]
+      },
+      html: {
+        files: '*.html'
       }
     },
 
