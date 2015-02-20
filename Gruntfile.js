@@ -113,6 +113,7 @@ module.exports = function(grunt) {
         mangle: {
           except: ['jQuery']
         },
+        preserveComments: 'some',
         banner: '<%= banner %>',
         report: 'min'
       },
