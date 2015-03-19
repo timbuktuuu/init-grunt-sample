@@ -1,16 +1,42 @@
 {
-  "name": "Your Name",
-  "version": "0.0.1",
+  "name": "init-grunt-sample",
+  "version": "0.0.0",
   "description": "TODO description",
-  "author": "init ag",
+  "author": "init AG",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timbuktuuu/init-grunt-sample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/timbuktuuu/init-grunt-sample/issues"
+  },
+  "contributors": [
+    {
+      "name": "timbuktuuu",
+      "email": ""
+    },
+    {
+      "name": "ifahrentholz",
+      "email": ""
+    }
+  ],
   "devDependencies": {
-      "grunt": "~0.4.5",
-      "grunt-contrib-clean": "*",
-      "grunt-contrib-concat": "*",
-      "grunt-contrib-uglify": "*",
-      "grunt-contrib-compass": "*",
-      "grunt-contrib-watch": "*",
-      "grunt-notify": "*",
-      "load-grunt-tasks": "*"
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-compass": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-notify": "^0.2.12",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-newer": "^0.8.0",
+    "load-grunt-config": "^0.16.0"
+  },
+  "dependencies": {
+    "time-grunt": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
   }
 }
