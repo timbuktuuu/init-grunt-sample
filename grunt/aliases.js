@@ -22,6 +22,7 @@ module.exports = {
     'concat',
     'copy:dist',
     'uglify',
+    'filerev',
     'notify:build'
   ]
 };

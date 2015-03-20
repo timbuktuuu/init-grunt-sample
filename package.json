@@ -31,6 +31,7 @@
     "grunt-notify": "^0.2.12",
     "grunt-concurrent": "^1.0.0",
     "grunt-newer": "^0.8.0",
+    "grunt-filerev": "^2.1.2",
     "load-grunt-config": "^0.16.0"
   },
   "dependencies": {
