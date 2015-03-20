@@ -6,8 +6,8 @@ module.exports = {
 
   vendor: {
     src: [
-      '<%= jsSrc %>/vendor/jquery-1.11.1.js',
-      '<%= jsSrc %>/libs/modernizr*.js'
+      '<%= app %>/vendor-repo/jquery/dist/jquery.js',
+      '<%= app %>/vendor-repo/modernizr/modernizr.js'
     ], 
     dest: '<%= jsDest %>/vendor.js'
   },
