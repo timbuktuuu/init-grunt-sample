@@ -1,5 +1,5 @@
 module.exports = {
-  dist: {
+  build: {
     files: [{
       expand: true,
       dot: true,
@@ -9,15 +9,9 @@ module.exports = {
         '*.{ico,png,txt,md}',
         '*.{html,htm}',
         //'views/{,*/}*.html',
-        'img/{,*/}*.*',
-        'fonts/{,*/}*.*',
+        'img/**/*.*',
+        'fonts/**/*.*'
       ]
-    }, 
-    /*{
-      expand: true,
-      cwd: '.',
-      src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
-      dest: '<%= yeoman.dist %>'
-    }*/]
+    }]
   }
 };

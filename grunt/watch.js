@@ -1,19 +1,13 @@
 module.exports = {
-  options: {
-    livereload: true,
-  },
-  
-  compass: {
-    files: ['<%= cssSrc %>/{,*/}*.{scss,sass}'],
-    tasks: ['compass:dev', 'notify:sass']
-  },
-  
-  js: {
-    files: ['<%= jsSrc %>/{,*/}*.{js}'],
-    tasks: ['newer:concat', 'newer:uglify','notify:js']
-  },
+  assets: {
+    // Provide livereload
+    options: {
+      livereload: true
+    },
+    // Assets to watch:
+    files: ['<%= app %>/**/*', '!**/node_modules/**'],
 
-  html: {
-    files: '<%= app %>/{,*/}*.{html,htm}'
+    // When assets are changed:
+    tasks: ['syncAssets']
   }
 };
