@@ -5,7 +5,7 @@ module.exports = {
       livereload: true
     },
     // Assets to watch:
-    files: ['<%= app %>/**/*', '!**/node_modules/**'],
+    files: ['<%= app %>/**/*', '!**/vendor-repo/**'],
 
     // When assets are changed:
     tasks: ['syncAssets']
