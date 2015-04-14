@@ -1,8 +1,8 @@
-# Simple Gruntfile and package.json Sample [![Dependency Status](https://gemnasium.com/timbuktuuu/init-grunt-sample.svg)](https://gemnasium.com/timbuktuuu/init-grunt-sample)
+# Grunt Sample [![Dependency Status](https://gemnasium.com/timbuktuuu/init-grunt-sample.svg)](https://gemnasium.com/timbuktuuu/init-grunt-sample)
 
 ## Build & development
 
-Run `grunt build` for building and `grunt watch` for dev preview.
+Run `grunt build` for building and `grunt` for dev preview.
 
 ## Infos
 
