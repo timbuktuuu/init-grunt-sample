@@ -29,7 +29,8 @@ module.exports = {
   ],
   
   'syncAssets': [
-    'build-js',
+    'newer:concat',
+    'newer:uglify',
     'compass:dev',
     'sync:dist'
   ]
