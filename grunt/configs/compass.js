@@ -19,8 +19,7 @@ module.exports = {
     options: {
       environment: 'production',
       outputStyle: 'compressed',
-      noLineComments: true,
-      banner: '<%= banner %>'
+      noLineComments: true
     }
   },
   

@@ -7,8 +7,12 @@ module.exports = function(grunt) {
 
   // load grunt config
   require('load-grunt-config')(grunt, {
-    // path to task.js files, defaults to grunt dir
-    configPath: path.join(process.cwd(), 'grunt'),
+    // path to alias.js file,  defaults to grunt dir
+    jitGrunt: {
+        customTasksDir: path.join(process.cwd(), 'grunt/tasks')
+    },
+    // path to config.js files, defaults to grunt dir
+    configPath: path.join(process.cwd(), 'grunt/configs'),
     
     // data passed into config.  Can use with <%= test %>
     data: {

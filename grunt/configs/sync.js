@@ -4,7 +4,6 @@ module.exports = {
       cwd: '<%= app %>',
       src: ['**/*.!(coffee|scss)', '!js/**/*.js', '!vendor-repo/**/**.*'],
       dest: '<%= dist %>'
-    }],
-    verbose: true
+    }]
   }
 };
