@@ -7,7 +7,7 @@ module.exports = function (grunt) {
       'concat',
       'copy:build',
       'uglify',
-      'filerev',
+      //'filerev',
       'notify:build'
     ]
   );
