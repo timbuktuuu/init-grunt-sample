@@ -1,8 +1,8 @@
 module.exports = function (grunt) {
   grunt.registerTask(
-    'build-sass', 
+    'build-sass',
     [
-      'clean:sass',
+      'clean:css',
       'compass:dev'
     ]
   );

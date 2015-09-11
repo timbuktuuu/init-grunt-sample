@@ -1,9 +1,9 @@
 module.exports = function (grunt) {
   grunt.registerTask(
-    'build-js', 
+    'build-js',
     [
       'clean:js',
-      'concat',
+      'concat:js',
       'uglify'
     ]
   );

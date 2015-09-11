@@ -1,8 +1,10 @@
 {
   "name": "init-grunt-sample",
-  "version": "0.0.1",
+  "private": true,
+  "version": "0.0.3",
   "description": "TODO description",
-  "author": "init AG",
+  "author": "timbuktuuu",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/timbuktuuu/init-grunt-sample.git"
@@ -20,22 +22,19 @@
       "email": ""
     }
   ],
-  "devDependencies": {
+  "dependencies": {
+    "include-all": "~0.1.6",
     "grunt": "0.4.5",
-    "grunt-concurrent": "^1.0.0",
+    "grunt-sync": "~0.2.3"
+  },
+  "devDependencies": {
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-compass": "^1.0.3",
     "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-uglify": "^0.9.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-filerev": "^2.3.0",
-    "grunt-newer": "^1.1.0",
     "grunt-notify": "^0.4.1",
-    "grunt-sync": "^0.2.3",
-    "jit-grunt": "^0.9.1",
-    "time-grunt": "^1.0.0",
-    "load-grunt-config": "^0.16.0"
+    "time-grunt": "^1.0.0"
   },
   "engines": {
     "node": ">=0.12.1"

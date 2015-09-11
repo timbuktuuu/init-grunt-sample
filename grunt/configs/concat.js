@@ -1,29 +1,32 @@
-module.exports = {
-  options: {
-    banner: '<%= banner %>',
-    stripBanners: true
-  },
+/**
+ * Concatenates files
+ *
+ * ---------------------------------------------------------------
+ *
+ * This plugin requires Grunt >=0.4.0
+ *
+ * For usage docs see:
+ *    https://github.com/gruntjs/grunt-contrib-concat
+ *
+ */
 
-  vendor: {
-    src: [
-      '<%= app %>/vendor-repo/jquery/dist/jquery.js',
-      '<%= app %>/vendor-repo/modernizr/modernizr.js'
-    ], 
-    dest: '<%= jsDest %>/vendor.js'
-  },
-  
-  components: {
-    src : [
-      '<%= jsSrc %>/components/*.js',
-      '<%= jsSrc %>/components/**/*.js'
-    ],
-    dest : '<%= jsDest %>/components.js'
-  },
+module.exports = function(grunt) {
+  grunt.config.set('concat', {
+    options: {
+      stripBanners: true
+    },
 
-  app: {
-    src: [
-      '<%= jsSrc %>/app.js'
-    ], 
-    dest: '<%= jsDest %>/app.js' 
-  }
+    js: {
+			src: require('../pipeline').jsFilesToInject,
+			dest: 'dist/js/app.js'
+		},
+
+		css: {
+			src: require('../pipeline').cssFilesToInject,
+			dest: 'dist/css/main.css'
+		}
+  });
+
+  grunt.loadNpmTasks('grunt-contrib-concat');
+
 };

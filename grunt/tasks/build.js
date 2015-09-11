@@ -1,14 +1,11 @@
 module.exports = function (grunt) {
   grunt.registerTask(
-    'build', 
+    'build',
     [
       'clean:dist',
-      'concurrent:dist',
-      'concat',
-      'copy:build',
+      'syncAssets',
       'uglify',
-      //'filerev',
-      'notify:build'
+      'notify'
     ]
   );
 };

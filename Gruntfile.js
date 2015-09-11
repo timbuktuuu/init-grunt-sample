@@ -1,31 +1,66 @@
 module.exports = function(grunt) {
-  
-  var path = require('path');
 
-  // measures the time each task takes
-  require('time-grunt')(grunt);
+  /**
+   * Load the include-all library in order to require all of our
+   * grunt configurations and task registrations dynamically.
+   */
+  var includeAll;
+  try {
+    includeAll = require('include-all');
+  } catch (e0) {
+    try {
+      includeAll = require('static/node_modules/include-all');
+    } catch (e1) {
+      console.error('Could not find `include-all` module.');
+      console.error('Skipping grunt tasks...');
+      console.error('To fix this please run:');
+      console.error('npm install include-all --save');
+      console.error();
 
-  // load grunt config
-  require('load-grunt-config')(grunt, {
-    // path to alias.js file, defaults to grunt dir
-    jitGrunt: {
-        customTasksDir: path.join(process.cwd(), 'grunt/tasks')
-    },
-    // path to config.js files, defaults to grunt dir
-    configPath: path.join(process.cwd(), 'grunt/configs'),
-    
-    // data passed into config.  Can use with <%= test %>
-    data: {
-      app: require('./bower.json').appPath || 'src',
-      dist: 'dist',
-      imgSrc: 'src/img',
-      fontSrc: 'src/fonts',
-      jsSrc: 'src/js',
-      jsDest: 'dist/js',
-      cssSrc: 'src/scss',
-      cssDest: 'dist/css',
-      banner : '/*! <%= package.title || package.name %> - v<%= package.version %> - ' + '<%= package.author %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n\n',
-    },
-  });
+      grunt.registerTask('default', []);
+      return;
+    }
+  }
+
+  /**
+   * Loads Grunt configuration modules from the specified
+   * relative path. These modules should export a function
+   * that, when run, should either load/configure or register
+   * a Grunt task.
+   */
+  function loadTasks(relPath) {
+    return includeAll({
+      dirname: require('path').resolve(__dirname, relPath),
+      filter: /(.+)\.js$/
+    }) || {};
+  }
+
+  /**
+   * Invokes the function from a Grunt configuration module with
+   * a single argument - the `grunt` object.
+   */
+  function invokeConfigFn(tasks) {
+    for(var taskName in tasks) {
+      tasks[taskName](grunt);
+    }
+  }
+
+  /**
+   * Load task functions
+   */
+  var taskConfigurations = loadTasks('./grunt/configs/'),
+      registerDefinitions = loadTasks('./grunt/tasks/');
+
+
+  // (ensure that a default task exists)
+  if(!registerDefinitions.default) {
+    registerDefinitions.default = function(grunt) {
+      grunt.registerTask('default', []);
+    };
+  }
+
+  // Run task functions to configure Grunt.
+  invokeConfigFn(taskConfigurations);
+  invokeConfigFn(registerDefinitions);
 
 };

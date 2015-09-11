@@ -1,11 +1,10 @@
 module.exports = function (grunt) {
   grunt.registerTask(
-    'syncAssets', 
+    'syncAssets',
     [
-      'newer:concat',
-      'newer:uglify',
+      'concat:js',
       'compass:dev',
-      'sync:dist'
+      'sync'
     ]
   );
 };
