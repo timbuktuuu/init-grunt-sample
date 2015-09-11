@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 
   // load grunt config
   require('load-grunt-config')(grunt, {
-    // path to alias.js file,  defaults to grunt dir
+    // path to alias.js file, defaults to grunt dir
     jitGrunt: {
         customTasksDir: path.join(process.cwd(), 'grunt/tasks')
     },
