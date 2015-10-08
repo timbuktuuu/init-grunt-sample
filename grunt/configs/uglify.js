@@ -1,6 +1,6 @@
 /**
  * This plugin will compress and mangle the input files using
- * This plugin will compress and mangle the input files using
+ * the provided options.
  *
  * ---------------------------------------------------------------
  *
