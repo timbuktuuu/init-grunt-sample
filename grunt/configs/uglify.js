@@ -1,6 +1,7 @@
 /**
- * This plugin will check the JS for syntax and other logical
- * errors
+ * This plugin will compress and mangle the input files using
+ * This plugin will compress and mangle the input files using
+ *
  * ---------------------------------------------------------------
  *
  * This plugin requires Grunt >=0.4.0
