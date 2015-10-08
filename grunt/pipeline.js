@@ -13,6 +13,7 @@
  * (if you're using LESS with the built-in default config, you'll want  to change `assets/styles/importer.less` instead.)
  */
 
+'use strict';
 var cssFilesToInject = [
   'css/**/*.css'
 ];
@@ -32,19 +33,17 @@ var jsFilesToInject = [
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/components/*.js',
+  'js/components/**/*.js',
 
   // Document Ready Starter
   'js/app.js'
 ];
-
 
 /**
  * Prefix relative paths to source files so they point to the proper locations
  * (i.e. where the other Grunt tasks spit them out, or in some cases, where
  * they reside in the first place)
  */
-
 module.exports.cssFilesToInject = cssFilesToInject.map(function(path) {
   return 'dist/' + path;
 });

@@ -10,6 +10,7 @@
  *
  */
 
+'use strict';
 module.exports = function(grunt) {
   grunt.config.set('concat', {
     options: {
@@ -17,14 +18,14 @@ module.exports = function(grunt) {
     },
 
     js: {
-			src: require('../pipeline').jsFilesToInject,
-			dest: 'dist/js/app.js'
-		},
+      src: require('../pipeline').jsFilesToInject,
+      dest: 'dist/js/app.js'
+    },
 
-		css: {
-			src: require('../pipeline').cssFilesToInject,
-			dest: 'dist/css/main.css'
-		}
+    css: {
+      src: require('../pipeline').cssFilesToInject,
+      dest: 'dist/css/main.css'
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');

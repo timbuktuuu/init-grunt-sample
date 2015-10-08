@@ -1,7 +1,6 @@
 /**
- * This plugin will compress and mangle the input files using
- * the provided options.
- *
+ * This plugin will check the JS for syntax and other logical
+ * errors
  * ---------------------------------------------------------------
  *
  * This plugin requires Grunt >=0.4.0
@@ -11,6 +10,7 @@
  *
  */
 
+'use strict';
 module.exports = function(grunt) {
   grunt.config.set('uglify', {
     default: {
@@ -19,7 +19,8 @@ module.exports = function(grunt) {
           except: ['jQuery']
         },
         preserveComments: 'some',
-        report: 'min'
+        report: 'min',
+        sourceMap: true
       },
       files: {
         'dist/js/vendor.min.js': ['dist/js//vendor.js'],
