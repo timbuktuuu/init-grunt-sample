@@ -12,6 +12,7 @@
  *
  */
 
+'use strict';
 module.exports = function(grunt) {
   grunt.config.set('notify', {
     build: {

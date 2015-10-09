@@ -1,6 +1,7 @@
-module.exports = function (grunt) {
+'use strict';
+module.exports = function(grunt) {
   grunt.registerTask(
-    'default', 
+    'default',
     [
       'clean:dist',
       'syncAssets',

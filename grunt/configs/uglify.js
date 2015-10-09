@@ -11,6 +11,7 @@
  *
  */
 
+'use strict';
 module.exports = function(grunt) {
   grunt.config.set('uglify', {
     default: {
@@ -19,7 +20,8 @@ module.exports = function(grunt) {
           except: ['jQuery']
         },
         preserveComments: 'some',
-        report: 'min'
+        report: 'min',
+        sourceMap: true
       },
       files: {
         'dist/js/vendor.min.js': ['dist/js//vendor.js'],

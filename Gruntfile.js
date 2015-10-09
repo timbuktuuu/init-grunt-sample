@@ -1,3 +1,4 @@
+'use strict';
 module.exports = function(grunt) {
 
   /**
@@ -5,6 +6,9 @@ module.exports = function(grunt) {
    * grunt configurations and task registrations dynamically.
    */
   var includeAll;
+  var taskConfigurations;
+  var registerDefinitions;
+
   try {
     includeAll = require('include-all');
   } catch (e0) {
@@ -40,7 +44,7 @@ module.exports = function(grunt) {
    * a single argument - the `grunt` object.
    */
   function invokeConfigFn(tasks) {
-    for(var taskName in tasks) {
+    for (var taskName in tasks) {
       tasks[taskName](grunt);
     }
   }
@@ -48,12 +52,11 @@ module.exports = function(grunt) {
   /**
    * Load task functions
    */
-  var taskConfigurations = loadTasks('./grunt/configs/'),
-      registerDefinitions = loadTasks('./grunt/tasks/');
-
+  taskConfigurations = loadTasks('./grunt/configs/');
+  registerDefinitions = loadTasks('./grunt/tasks/');
 
   // (ensure that a default task exists)
-  if(!registerDefinitions.default) {
+  if (!registerDefinitions.default) {
     registerDefinitions.default = function(grunt) {
       grunt.registerTask('default', []);
     };
