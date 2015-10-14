@@ -1,4 +1,5 @@
-// Navigation Code
+// Just some example code
+// Add more of such modules in this folder and call init() from app.js
 'use strict';
 
 var APP = window.APP || {};
