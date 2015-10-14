@@ -1,7 +1,6 @@
 /**
- * This plugin will compress and mangle the input files using
- * the provided options.
- *
+ * This plugin will check the JS for syntax and other logical
+ * errors
  * ---------------------------------------------------------------
  *
  * This plugin requires Grunt >=0.4.0
@@ -24,7 +23,7 @@ module.exports = function(grunt) {
         sourceMap: true
       },
       files: {
-        'dist/js/vendor.min.js': ['dist/js//vendor.js'],
+        'dist/js/vendors.min.js': ['dist/js/vendors.js'],
         'dist/js/components.min.js': ['dist/js/components.js'],
         'dist/js/app.min.js': ['dist/js/app.js']
       }

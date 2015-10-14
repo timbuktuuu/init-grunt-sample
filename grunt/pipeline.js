@@ -25,15 +25,15 @@ var cssFilesToInject = [
 
 var jsFilesToInject = [
   // Load jQuery before everything else
-  'js/vendor/jquery/jquery.js',
+  'js/vendors/jquery/jquery.js',
 
   // Vendor scripts like bxSlider, or fancybox are brought in
   // here
-  'js/vendor/**/*.js',
+  'js/vendors/**/*.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/components/**/*.js',
+  'js/components/*.js',
 
   // Document Ready Starter
   'js/app.js'

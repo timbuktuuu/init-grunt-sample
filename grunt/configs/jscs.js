@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       config: '.jscsrc',
       // must be the same as in .jshintignore
       excludeFiles: [
-        'src/js/vendor/**'
+        'src/js/vendors/**'
       ]
     }
   });
