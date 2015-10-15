@@ -7,6 +7,8 @@ module.exports = function(grunt) {
       'syncAssets',
       'jshint',
       'jscs',
+      'concat:jsVendors',
+      'concat:js',
       'uglify',
       'notify'
     ]

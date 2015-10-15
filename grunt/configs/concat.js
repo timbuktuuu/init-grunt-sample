@@ -22,6 +22,11 @@ module.exports = function(grunt) {
       dest: 'dist/js/app.js'
     },
 
+    jsVendors: {
+      src: require('../pipeline').jsVendorsToInject,
+      dest: 'dist/js/vendors.min.js'
+    },
+
     css: {
       src: require('../pipeline').cssFilesToInject,
       dest: 'dist/css/main.css'

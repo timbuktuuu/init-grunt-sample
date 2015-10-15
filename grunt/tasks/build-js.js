@@ -6,6 +6,7 @@ module.exports = function(grunt) {
       'clean:js',
       'jshint',
       'jscs',
+      'concat:jsVendors',
       'concat:js',
       'uglify'
     ]

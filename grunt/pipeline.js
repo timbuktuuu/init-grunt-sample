@@ -12,25 +12,27 @@
  * CSS files to inject in order
  * (if you're using LESS with the built-in default config, you'll want  to change `assets/styles/importer.less` instead.)
  */
-
 'use strict';
 var cssFilesToInject = [
   'css/**/*.css'
 ];
 
 /**
- * Client-side javascript files to inject in order
- * (uses Grunt-style wildcard/glob/splat expressions)
+ * js vendor files like jquery, underscore, sliders...
  */
-
-var jsFilesToInject = [
+var jsVendorsToInject = [
   // Load jQuery before everything else
   'js/vendors/jquery/jquery.js',
 
-  // Vendor scripts like bxSlider, or fancybox are brought in
-  // here
-  'js/vendors/**/*.js',
+  // Vendor scripts like bxSlider, or fancybox are brought in here
+  'js/vendors/**/*.js'
+];
 
+/**
+ * Client-side javascript files to inject in order
+ * (uses Grunt-style wildcard/glob/splat expressions)
+ */
+var jsFilesToInject = [
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
   'js/components/*.js',
@@ -46,6 +48,9 @@ var jsFilesToInject = [
  */
 module.exports.cssFilesToInject = cssFilesToInject.map(function(path) {
   return 'dist/' + path;
+});
+module.exports.jsVendorsToInject = jsVendorsToInject.map(function(path) {
+  return 'src/' + path;
 });
 module.exports.jsFilesToInject = jsFilesToInject.map(function(path) {
   return 'src/' + path;

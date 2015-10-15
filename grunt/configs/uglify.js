@@ -23,8 +23,6 @@ module.exports = function(grunt) {
         sourceMap: true
       },
       files: {
-        'dist/js/vendors.min.js': ['dist/js/vendors.js'],
-        'dist/js/components.min.js': ['dist/js/components.js'],
         'dist/js/app.min.js': ['dist/js/app.js']
       }
     }
