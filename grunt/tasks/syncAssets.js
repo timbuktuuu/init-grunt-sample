@@ -5,6 +5,7 @@ module.exports = function(grunt) {
     [
       'jshint',
       'jscs',
+      'concat:jsVendors',
       'concat:js',
       'compass:dev',
       'sync'

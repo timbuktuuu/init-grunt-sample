@@ -4,11 +4,9 @@ module.exports = function(grunt) {
     'build',
     [
       'clean:dist',
-      'syncAssets',
       'jshint',
       'jscs',
-      'concat:jsVendors',
-      'concat:js',
+      'syncAssets',
       'uglify',
       'notify'
     ]
