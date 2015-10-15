@@ -8,11 +8,12 @@
  * for matching multiple files.)
  */
 
+'use strict';
+
 /**
  * CSS files to inject in order
- * (if you're using LESS with the built-in default config, you'll want  to change `assets/styles/importer.less` instead.)
+ * (if you're using LESS with the built-in default config, you'll want  to change `src/scss/importer.less` instead.)
  */
-'use strict';
 var cssFilesToInject = [
   'css/**/*.css'
 ];
@@ -22,7 +23,7 @@ var cssFilesToInject = [
  */
 var jsVendorsToInject = [
   // Load jQuery before everything else
-  'js/vendors/jquery/jquery.js',
+  'js/vendors/jquery*/jquery*.js',
 
   // Vendor scripts like bxSlider, or fancybox are brought in here
   'js/vendors/**/*.js'
@@ -35,7 +36,7 @@ var jsVendorsToInject = [
 var jsFilesToInject = [
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/components/*.js',
+  'js/components/**/*.js',
 
   // Document Ready Starter
   'js/app.js'
