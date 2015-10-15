@@ -23,9 +23,10 @@ var cssFilesToInject = [
  */
 var jsVendorsToInject = [
   // Load jQuery before everything else
-  'js/vendors/jquery*/jquery*.js',
+  'js/vendors/jquery/jquery-*.js',
 
   // Vendor scripts like bxSlider, or fancybox are brought in here
+  // ATTENTION: check if jquery gets double injected
   'js/vendors/**/*.js'
 ];
 
