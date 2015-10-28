@@ -23,10 +23,9 @@ module.exports = function(grunt) {
       sassDir: 'src/scss',
       cssDir: 'dist/css',
       imagesDir: 'src/img',
-      javascriptsDir: 'src/js',
       fontsDir: 'src/fonts',
-      httpImagesPath: '/img',
-      httpFontsPath: '/fonts',
+      httpImagesPath: '../img',
+      httpFontsPath: '../fonts',
       raw: 'Encoding.default_external = \'utf-8\'\n'
     },
 
