@@ -15,9 +15,10 @@ module.exports = function(grunt) {
     options: {
       config: '.scss-lint.yml',
       reporterOutput: 'scss-lint-report.xml',
-      exclude: 'src/scss/vendor/**',
       colorizeOutput: true,
-      compact: true
+      compact: true,
+      maxBuffer: NaN,
+      exclude: 'src/scss/vendor/**'
     }
   });
 
