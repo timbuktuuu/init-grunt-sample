@@ -30,7 +30,7 @@ linters:
     style: same_line
 
   EmptyLineBetweenBlocks:
-    enabled: true
+    enabled: false
     ignore_single_line_blocks: false
 
   EmptyRule:
@@ -159,7 +159,7 @@ linters:
     enabled: true
 
   VendorPrefixes:
-    enabled: true
+    enabled: false
     identifier_list: base
     include: []
     exclude: []
