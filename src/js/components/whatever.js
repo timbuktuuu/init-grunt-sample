@@ -10,6 +10,9 @@ APP.whatever = {
 
   init: function() {
     console.log('=> init whatever: ' + this.someWhateverVar);
+
+    var test,
+        test2;
   },
 
   someFunction: function(event) {
@@ -17,4 +20,3 @@ APP.whatever = {
   }
 
 };
-

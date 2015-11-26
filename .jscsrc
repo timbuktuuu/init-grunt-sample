@@ -4,6 +4,6 @@
   "validateLineBreaks": null,
   "requirePaddingNewLinesBeforeLineComments": null,
   "requirePaddingNewLinesAfterBlocks": null,
-  "requireTrailingComma": null
+  "requireTrailingComma": null,
+  "disallowMultipleVarDecl": false
 }
-
