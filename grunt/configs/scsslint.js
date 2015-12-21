@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       colorizeOutput: true,
       compact: true,
       maxBuffer: NaN,
-      exclude: 'src/scss/vendor/**'
+      exclude: 'src/scss/vendors/**'
     }
   });
 
