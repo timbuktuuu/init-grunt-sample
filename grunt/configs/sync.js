@@ -18,12 +18,16 @@ module.exports = function(grunt) {
     default: {
       files: [{
         cwd: 'src',
-        src: ['fonts/**/*.{woff,woff2,eot,svg,ttf}', 'img/**', '!**/*.coffee', '!**/*.{scss,sass}', '!**/js/'],
+        src: [
+          'fonts/**/*.{woff,woff2,eot,svg,ttf}',
+          'img/**', '!**/*.coffee',
+          '!**/*.{scss,sass}',
+          '!**/js/'
+        ],
         dest: 'dist'
       }]
     }
   });
 
   grunt.loadNpmTasks('grunt-sync');
-
 };

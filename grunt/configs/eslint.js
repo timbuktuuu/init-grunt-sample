@@ -13,21 +13,13 @@
 
 'use strict';
 module.exports = function(grunt) {
-  grunt.config.set('jscs', {
-    src:  [
+  grunt.config.set('eslint', {
+    target:  [
       'Gruntfile.js',
       'grunt/**/*.js',
-       require('../pipeline').jsFilesToInject
-    ],
-    options: {
-      config: '.jscsrc',
-      // must be the same as in .jshintignore
-      excludeFiles: [
-        'src/js/vendors/**'
-      ]
-    }
+      'src/js/**/*.js'
+    ]
   });
 
-  grunt.loadNpmTasks('grunt-jscs');
-
+  grunt.loadNpmTasks('grunt-eslint');
 };

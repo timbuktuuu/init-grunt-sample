@@ -9,10 +9,10 @@ APP.whatever = {
   someWhateverVar: false,
 
   init: function() {
-    console.log('=> init whatever: ' + this.someWhateverVar);
-
     var test,
-        test2;
+    test2;
+
+    console.log('=> init whatever: ' + this.someWhateverVar);
   },
 
   someFunction: function(event) {

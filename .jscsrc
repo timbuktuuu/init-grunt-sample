@@ -1,9 +1,0 @@
-{
-  "preset": "airbnb",
-  "validateIndentation": 2,
-  "validateLineBreaks": null,
-  "requirePaddingNewLinesBeforeLineComments": null,
-  "requirePaddingNewLinesAfterBlocks": null,
-  "requireTrailingComma": null,
-  "disallowMultipleVarDecl": false
-}

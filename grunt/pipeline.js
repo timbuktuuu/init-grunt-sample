@@ -8,11 +8,12 @@
  * for matching multiple files.)
  */
 
-'use strict';
+// 'use strict';
 
 /**
  * CSS files to inject in order
- * (if you're using LESS with the built-in default config, you'll want  to change `src/scss/importer.less` instead.)
+ * (if you're using LESS with the built-in default config,
+ * you'll want  to change `src/scss/importer.less` instead.)
  */
 var cssFilesToInject = [
   'css/**/*.css'

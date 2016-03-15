@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "comma-dangle": 0,
+    "eqeqeq": [2, "smart"],
+    "strict": [1, "global"],
+    "space-before-function-paren": [2, "never"],
+    "no-var": 1,
+    "one-var": [2, {
+      "var": "never", // Exactly one var declaration per function
+      "let": "always", // Exactly one let declaration per block
+      "const": "never" // Exactly one declarator per const declaration per block
+    }],
+  }
+}
