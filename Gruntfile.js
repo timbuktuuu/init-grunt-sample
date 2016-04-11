@@ -1,5 +1,5 @@
 'use strict';
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   /**
    * Load the include-all library in order to require all of our
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
 
   // (ensure that a default task exists)
   if (!registerDefinitions.default) {
-    registerDefinitions.default = function(grunt) {
+    registerDefinitions.default = function (grunt) {
       grunt.registerTask('default', []);
     };
   }

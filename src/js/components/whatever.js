@@ -8,14 +8,14 @@ APP.whatever = {
 
   someWhateverVar: false,
 
-  init: function() {
+  init: function () {
     console.log('=> init whatever: ' + this.someWhateverVar);
 
     var test,
         test2;
   },
 
-  someFunction: function(event) {
+  someFunction: function (event) {
     console.log('=> someFunction in whatever');
   }
 

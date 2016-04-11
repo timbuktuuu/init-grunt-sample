@@ -12,7 +12,7 @@
  */
 
 'use strict';
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.config.set('jshint', {
     options: {
       jshintrc: true

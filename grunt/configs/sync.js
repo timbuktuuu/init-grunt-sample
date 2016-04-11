@@ -13,12 +13,14 @@
  */
 
 'use strict';
-module.exports = function(grunt) {
+module.exports = function (grunt) {
   grunt.config.set('sync', {
     default: {
       files: [{
         cwd: 'src',
+        //jscs:disable maximumLineLength
         src: ['fonts/**/*.{woff,woff2,eot,svg,ttf}', 'img/**', '!**/*.coffee', '!**/*.{scss,sass}', '!**/js/'],
+        //jscs:enable maximumLineLength
         dest: 'dist'
       }]
     }

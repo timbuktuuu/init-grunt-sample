@@ -12,7 +12,8 @@
 
 /**
  * CSS files to inject in order
- * (if you're using LESS with the built-in default config, you'll want  to change `src/scss/importer.less` instead.)
+ * (if you're using LESS with the built-in default config,
+ * you'll want  to change `src/scss/importer.less` instead.)
  */
 var cssFilesToInject = [
   'css/**/*.css'
@@ -48,12 +49,12 @@ var jsFilesToInject = [
  * (i.e. where the other Grunt tasks spit them out, or in some cases, where
  * they reside in the first place)
  */
-module.exports.cssFilesToInject = cssFilesToInject.map(function(path) {
+module.exports.cssFilesToInject = cssFilesToInject.map(function (path) {
   return 'dist/' + path;
 });
-module.exports.jsVendorsToInject = jsVendorsToInject.map(function(path) {
+module.exports.jsVendorsToInject = jsVendorsToInject.map(function (path) {
   return 'src/' + path;
 });
-module.exports.jsFilesToInject = jsFilesToInject.map(function(path) {
+module.exports.jsFilesToInject = jsFilesToInject.map(function (path) {
   return 'src/' + path;
 });

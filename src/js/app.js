@@ -2,7 +2,7 @@
 
 var APP = window.APP || {};
 
-$(document).ready(function() {
+$(document).ready(function () {
   APP.whatever.init();
   // ... add more modules here
 });
