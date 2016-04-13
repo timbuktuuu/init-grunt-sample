@@ -1,5 +1,10 @@
 'use strict';
 module.exports = function (grunt) {
+  /**
+   * Load the time-grunt module
+   * Display the elapsed execution time of grunt tasks
+   */
+  require('time-grunt')(grunt);
 
   /**
    * Load the include-all library in order to require all of our
