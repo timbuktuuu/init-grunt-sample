@@ -15,7 +15,7 @@ module.exports = function (grunt) {
   grunt.config.set('concat', {
     options: {
       stripBanners: true,
-      banner : '/*! <%= grunt.template.today("yyyy-mm-dd") %> */\n\n'
+      banner: '/*! <%= grunt.template.today("yyyy-mm-dd") %> */\n\n'
     },
 
     js: {
