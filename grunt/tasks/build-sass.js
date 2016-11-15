@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     [
       'clean:css',
       'scsslint',
-      'compass:dev'
+      'sass:dev'
     ]
   );
 };

@@ -8,7 +8,7 @@ module.exports = function (grunt) {
       'concat:jsVendors',
       'concat:js',
       'scsslint',
-      'compass:dev',
+      'sass:dev',
       'sync'
     ]
   );
