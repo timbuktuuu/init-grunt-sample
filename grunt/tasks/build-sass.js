@@ -5,7 +5,8 @@ module.exports = function (grunt) {
     [
       'clean:css',
       'scsslint',
-      'sass:dev'
+      'sass:dev',
+      'postcss'
     ]
   );
 };

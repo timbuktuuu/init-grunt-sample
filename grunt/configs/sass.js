@@ -14,9 +14,9 @@
  *    https://github.com/sass-eyeglass/eyeglass
  *
  */
-var eyeglass = require("eyeglass");
+ 'use strict';
 
-'use strict';
+var eyeglass = require('eyeglass');
 module.exports = function (grunt) {
   grunt.config.set('sass', {
     options: eyeglass({

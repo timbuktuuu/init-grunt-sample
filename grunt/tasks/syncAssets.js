@@ -9,6 +9,7 @@ module.exports = function (grunt) {
       'concat:js',
       'scsslint',
       'sass:dev',
+      'postcss',
       'sync'
     ]
   );
