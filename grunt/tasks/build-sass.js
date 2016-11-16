@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     'build-sass',
     [
       'clean:css',
-      'scsslint',
+      'sasslint',
       'sass:dev',
       'postcss'
     ]

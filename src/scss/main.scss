@@ -2,6 +2,8 @@ $white: #fff;
 
 html,
 body {
-  background-color: $white;
-  content: '» ';
+  background-color: #fff;
+  content: "» ";
 }
+
+@import "components/_module-a";

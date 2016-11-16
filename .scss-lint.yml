@@ -1,52 +1,42 @@
-severity: error
-
-linters:
-
-  BorderZero:
-    enabled: true
-    convention: zero
-
-  BemDepth:
-    enabled: true
-
-  DeclarationOrder:
-    enabled: false
-
-  ExtendDirective:
-    enabled: false
-
-  LeadingZero:
-    enabled: false
-
-  NameFormat:
-    enabled: true
-
-  PrivateNamingConvention:
-    enabled: true
-    prefix: _
-
-  PropertySortOrder:
-    enabled: false
-
-  QualifyingElement:
-    enabled: false
-
-  SelectorFormat:
-    enabled: false
-    convention: hyphenated_BEM
-    class_convention: ^(?!js-).*
-    class_convention_explanation: should not be written in the form js-*
-
-  SingleLinePerProperty:
-    enabled: true
-    allow_single_line_rule_sets: false
-
-  StringQuotes:
-    enabled: true
-    style: single_quotes
-
-  NestingDepth:
-      max_depth: 4
-
-  PseudoElement:
-    enabled: false
+files:
+  include:
+    - 'src/scss/**/*.s+(a|c)ss'
+  ignore:
+    - 'src/scss/vendors/**/*.scss'
+options:
+  formatter: stylish
+  merge-default-rules: false
+rules:
+  bem-depth: 1
+  border-zero:
+    - 1
+    - convention: zero
+  brace-style:
+    - 1
+    - allow-single-line: false
+  class-name-format:
+    - 0
+    - convention: ^(?!js-).*
+      convention-explanation: should not be written in the form js-*
+  extends-before-declarations: 0
+  extends-before-mixins: 0
+  function-name-format: 1
+  id-name-format:
+    - 0
+    - convention: hyphenatedbem
+  leading-zero: 0
+  mixin-name-format: 1
+  mixins-before-declarations: 0
+  nesting-depth:
+    - 1
+    - max-depth: 4
+  no-extends: 0
+  no-qualifying-elements: 0
+  placeholder-name-format:
+    - 0
+    - convention: hyphenatedbem
+  property-sort-order: 0
+  quotes:
+    - 1
+    - style: single
+  variable-name-format: 1

@@ -7,7 +7,7 @@ module.exports = function (grunt) {
       'jscs',
       'concat:jsVendors',
       'concat:js',
-      'scsslint',
+      'sasslint',
       'sass:dev',
       'postcss',
       'sync'
